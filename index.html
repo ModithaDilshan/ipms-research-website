@@ -261,7 +261,7 @@
         <div class="results-dashboard results-context reveal" data-tilt>
           <div class="dashboard-head"><div><small>READING THE EVIDENCE</small><strong>What was evaluated?</strong></div><span>Context first</span></div>
           <div class="context-row"><span class="context-dot context-dot-indigo"></span><div><strong>Controlled optimisation</strong><small>Team Formation: exact checks, simulation and a real-response case</small></div></div>
-          <div class="context-row"><span class="context-dot context-dot-blue"></span><div><strong>Historical data + test fixtures</strong><small>Scheduling: JIRA proxy, synthetic proposals and isolated runtime tests</small></div></div>
+          <div class="context-row"><span class="context-dot context-dot-blue"></span><div><strong>Historical data + proposal tests</strong><small>Scheduling: JIRA proxy, controlled test PDFs, a real project proposal run and isolated runtime tests</small></div></div>
           <div class="context-row"><span class="context-dot context-dot-violet"></span><div><strong>Prepared data pipeline</strong><small>Quality: annotated proposals and feedback, without a verified final model score</small></div></div>
           <div class="context-row"><span class="context-dot context-dot-cyan"></span><div><strong>Synthetic prediction + prototype</strong><small>Risk: held-out synthetic labels and live GitHub/Jira demonstrations</small></div></div>
         </div>
@@ -279,13 +279,13 @@
         </article>
 
         <article class="result-component result-scheduling reveal">
-          <div class="result-component-head"><span class="result-component-index">02 / PLANNING</span><span class="result-evidence-type">Historical + fixtures</span></div>
+          <div class="result-component-head"><span class="result-component-index">02 / PLANNING</span><span class="result-evidence-type">Historical + proposal tests</span></div>
           <h3>Adaptive Scheduling</h3>
           <p class="result-component-subtitle">Proposal tasks, effort estimates and member assignments become reviewable plans.</p>
-          <div class="result-feature"><strong>73 / 75</strong><span>explicit tasks recovered from three controlled synthetic proposals (97.3%)</span></div>
+          <div class="result-feature"><strong>73 / 75</strong><span>explicit tasks recovered from three controlled test PDFs (97.3%)</span></div>
           <dl class="result-facts"><div><dt>JIRA proxy classifier</dt><dd>81.27% held-out accuracy; weighted F1 0.815 on 1,411 issues</dd></div><div><dt>Workload balance</dt><dd>LPT CV 3.72% versus guarded hybrid 4.40% across 100 offline trials</dd></div></dl>
-          <details class="result-more"><summary>More evaluation details</summary><ul><li>Effort-model log MAE = 0.8554 and log RMSE = 1.0614; error in original hours remains large.</li><li>The draft reports 6/6 focused scheduling runtime checks passed in an isolated PostgreSQL database.</li><li>Live assignment uses LPT; the hybrid comparison and JIRA classifier are offline research evidence.</li></ul></details>
-          <p class="result-caveat"><strong>Boundary:</strong> JIRA outcome labels are not student-assignment accuracy; fixture recovery is not general proposal accuracy.</p>
+          <details class="result-more"><summary>More evaluation details</summary><ul><li>A separate prototype run parsed the team's project proposal into a 25-task plan; it is not part of the 73/75 test-PDF result.</li><li>Effort-model log MAE = 0.8554 and log RMSE = 1.0614; error in original hours remains large.</li><li>The draft reports 6/6 focused scheduling runtime checks passed in an isolated PostgreSQL database.</li><li>Live assignment uses LPT; the hybrid comparison and JIRA classifier are offline research evidence.</li></ul></details>
+          <p class="result-caveat"><strong>Boundary:</strong> JIRA outcome labels are not student-assignment accuracy; recovery on test PDFs is not general proposal accuracy.</p>
         </article>
 
         <article class="result-component result-quality reveal">
