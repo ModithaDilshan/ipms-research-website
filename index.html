@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Intelligent Project Management System for Undergraduate Students — SLIIT research project R26-IT-095.">
+  <meta name="description" content="Intelligent Project Management System for Undergraduate Students. SLIIT research project R26-IT-095.">
   <meta name="theme-color" content="#f4f7ff">
   <title>IPMS Research | R26-IT-095</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261011-team-profiles">
-  <script src="script.js?v=20261010-documents" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261018-hero-cleanup">
+  <script src="script.js?v=20261018-four-component-results" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -74,7 +74,6 @@
           </div>
           <div class="hero-actions">
             <a class="button button-primary" href="#components">Explore the research <span aria-hidden="true">→</span></a>
-            <a class="button button-secondary" href="documents/scheduling-component-paper.pdf" target="_blank" rel="noopener">Read component paper</a>
           </div>
           <dl class="hero-meta">
             <div><dt>Institution</dt><dd>SLIIT</dd></div>
@@ -124,10 +123,10 @@
 
     <section class="metrics-strip" aria-label="Research highlights">
       <div class="metrics-grid content-wide">
-        <div class="metric"><strong data-counter="4">0</strong><span>Integrated components</span></div>
-        <div class="metric"><strong data-counter="1411">0</strong><span>JIRA records evaluated</span></div>
-        <div class="metric"><strong data-counter="81.27" data-decimals="2" data-suffix="%">0</strong><span>Workload classifier accuracy</span></div>
-        <div class="metric"><strong data-counter="73" data-suffix="/75">0</strong><span>Controlled task recovery</span></div>
+        <div class="metric"><strong data-counter="0.9479" data-decimals="4">0</strong><span>Team allocation mean hypervolume</span></div>
+        <div class="metric"><strong data-counter="73" data-suffix="/75">0</strong><span>Scheduling tasks recovered in fixtures</span></div>
+        <div class="metric"><strong data-counter="2151">0</strong><span>Quality feedback records embedded</span></div>
+        <div class="metric"><strong data-counter="97.63" data-decimals="2" data-suffix="%">0</strong><span>Risk accuracy on synthetic data</span></div>
       </div>
     </section>
 
@@ -142,7 +141,7 @@
         <div class="research-grid">
           <article class="feature-panel feature-panel-large reveal">
             <span class="panel-index">The challenge</span>
-            <h3>Supervisors see reports, meetings, repositories, and schedules—but rarely as one connected story.</h3>
+            <h3>Supervisors see reports, meetings, repositories, and schedules, but rarely as one connected story.</h3>
             <p>Manual processes make it difficult to form balanced teams, identify proposal weaknesses, distribute work fairly, detect delivery risk early, and verify whether reported progress is supported by evidence.</p>
             <div class="challenge-list">
               <div><span>01</span><p>Skill and preference conflicts during team formation</p></div>
@@ -169,7 +168,7 @@
             <span class="kicker">02 · Methodology</span>
             <h2>A connected research pipeline</h2>
           </div>
-          <p>Every stage produces inspectable outputs for the next stage—from cohort data and proposals to reviewed progress and final academic events.</p>
+          <p>Every stage produces inspectable outputs for the next stage, from cohort data and proposals to reviewed progress and final academic events.</p>
         </div>
 
         <div class="pipeline reveal" role="list" aria-label="Research workflow">
@@ -209,7 +208,7 @@
         <div class="section-heading centered reveal">
           <span class="kicker">03 · Individual research components</span>
           <h2>Four focused studies. One shared system.</h2>
-          <p>Each component solves a distinct supervision problem while exchanging structured information through the integrated IPMS workflow.</p>
+          <p>Each component studies a distinct supervision problem. A shared portal connects the experience; direct backend exchange is verified only where noted below.</p>
         </div>
 
         <div class="component-grid">
@@ -219,7 +218,7 @@
             <h3>Intelligent Team Formation and Topic Feasibility Analysis</h3>
             <p>Generates Pareto-optimal team alternatives by balancing technical requirement coverage with student project preferences.</p>
             <ul><li>Heuristic-seeded NSGA-II V3</li><li>Requirement-coverage analysis</li><li>Capacity-aware supervisor allocation</li></ul>
-            <div class="component-owner"><span>DM</span><div><small>Researcher</small><strong>Dulakshana Malith</strong><em>IT22114662</em></div></div>
+            <div class="component-owner"><span>BN</span><div><small>Researcher</small><strong>Bandara N D M</strong><em>IT22114662</em></div></div>
           </article>
 
           <article class="component-card component-blue reveal" data-index="02">
@@ -227,8 +226,8 @@
             <div class="component-symbol" aria-hidden="true">AS</div>
             <h3>Adaptive Scheduling and Generative Project Planning</h3>
             <p>Converts proposal evidence into dependency-aware schedules, balances work, tracks verified progress, and plans academic events.</p>
-            <ul><li>XGBoost + LPT workload allocation</li><li>DAG scheduling and version history</li><li>Document and GitHub evidence tracking</li></ul>
-            <div class="component-owner"><span>MD</span><div><small>Researcher</small><strong>Moditha Dilshan</strong><em>IT22117014</em></div></div>
+            <ul><li>Live LPT allocation; offline XGBoost evaluation</li><li>DAG scheduling and version history</li><li>Document and GitHub evidence tracking</li></ul>
+            <div class="component-owner"><span>LR</span><div><small>Researcher</small><strong>Lekamge R L M D</strong><em>IT22117014</em></div></div>
           </article>
 
           <article class="component-card component-cyan reveal" data-index="03">
@@ -237,7 +236,7 @@
             <h3>Predictive Risk Monitoring and Contribution Analytics</h3>
             <p>Uses development activity to support early risk detection and more transparent interpretation of individual contribution.</p>
             <ul><li>GitHub and Jira activity signals</li><li>Predictive project-risk monitoring</li><li>Contribution Index dashboards</li></ul>
-            <div class="component-owner"><span>IK</span><div><small>Researcher</small><strong>S. A. Imansi Kavindi Kulathunga</strong><em>IT22109576</em></div></div>
+            <div class="component-owner"><span>KS</span><div><small>Researcher</small><strong>Kulathunga S A I K</strong><em>IT22109576</em></div></div>
           </article>
 
           <article class="component-card component-violet reveal" data-index="04">
@@ -245,8 +244,8 @@
             <div class="component-symbol" aria-hidden="true">QA</div>
             <h3>Automated Quality Assessment and Adaptive Mentorship</h3>
             <p>Analyzes research proposals, identifies weaknesses, retrieves relevant feedback, and recommends learning resources.</p>
-            <ul><li>TF-IDF and Linear SVM classification</li><li>Sentence-BERT feedback retrieval</li><li>Semantic grading and concept graphs</li></ul>
-            <div class="component-owner"><span>DR</span><div><small>Researcher</small><strong>Daham Rashmika</strong><em>IT22101624</em></div></div>
+            <ul><li>MiniLM embeddings and Logistic Regression</li><li>TF-IDF/Ridge grading and feedback retrieval</li><li>Version-aware supervisor review</li></ul>
+            <div class="component-owner"><span>RR</span><div><small>Researcher</small><strong>Rashmika R M D</strong><em>IT22101624</em></div></div>
           </article>
         </div>
       </div>
@@ -255,31 +254,64 @@
     <section class="section results-section" id="results">
       <div class="content-wide results-layout">
         <div class="results-copy reveal">
-          <span class="kicker light">04 · Verified research evidence</span>
-          <h2>Transparent results, including the limitations.</h2>
-          <p>The current evidence demonstrates a working scheduling and progress pipeline. Metrics are reported with their actual evaluation context rather than presented as proof of complete academic success.</p>
-          <div class="result-note">
-            <strong>Important interpretation</strong>
-            <p>The 81.27% value is JIRA fixed/resolved proxy classification accuracy—not student-assignment accuracy. Academic decisions remain subject to human review.</p>
-          </div>
+          <span class="kicker light">04 &middot; Research results</span>
+          <h2>Four components. Four distinct evidence stories.</h2>
+          <p>The project combines optimisation, planning, proposal assessment and risk monitoring. Each result below names its evaluation data and its limit; the figures should not be combined into one system accuracy.</p>
         </div>
-
-        <div class="results-dashboard reveal" data-tilt>
-          <div class="dashboard-head"><div><small>SCHEDULING COMPONENT</small><strong>Evaluation snapshot</strong></div><span>Verified artifacts</span></div>
-          <div class="result-row"><div><span>Workload classifier</span><small>Held-out accuracy · 1,411 records</small></div><strong>81.27%</strong></div>
-          <div class="progress-track"><i style="--value:81.27%"></i></div>
-          <div class="result-row"><div><span>Weighted F1 score</span><small>Stratified 80/20 split</small></div><strong>0.815</strong></div>
-          <div class="progress-track"><i style="--value:81.5%"></i></div>
-          <div class="result-row"><div><span>Task recovery</span><small>Controlled proposal fixtures</small></div><strong>73 / 75</strong></div>
-          <div class="progress-track"><i style="--value:97.3%"></i></div>
-          <div class="dashboard-footer"><span><i></i> Model + rule safeguards</span><span>Supervisor review required</span></div>
+        <div class="results-dashboard results-context reveal" data-tilt>
+          <div class="dashboard-head"><div><small>READING THE EVIDENCE</small><strong>What was evaluated?</strong></div><span>Context first</span></div>
+          <div class="context-row"><span class="context-dot context-dot-indigo"></span><div><strong>Controlled optimisation</strong><small>Team Formation: exact checks, simulation and a real-response case</small></div></div>
+          <div class="context-row"><span class="context-dot context-dot-blue"></span><div><strong>Historical data + test fixtures</strong><small>Scheduling: JIRA proxy, synthetic proposals and isolated runtime tests</small></div></div>
+          <div class="context-row"><span class="context-dot context-dot-violet"></span><div><strong>Prepared data pipeline</strong><small>Quality: annotated proposals and feedback, without a verified final model score</small></div></div>
+          <div class="context-row"><span class="context-dot context-dot-cyan"></span><div><strong>Synthetic prediction + prototype</strong><small>Risk: held-out synthetic labels and live GitHub/Jira demonstrations</small></div></div>
         </div>
       </div>
 
-      <div class="content-wide evidence-cards">
-        <article class="evidence-card reveal"><small>Fairness baseline</small><strong>3.72% CV</strong><p>LPT was slightly fairer than the 4.40% hybrid result in controlled allocation trials.</p></article>
-        <article class="evidence-card reveal"><small>Cross-validation</small><strong>76.47% ± 0.95</strong><p>Five-fold stratified accuracy for the workload suitability classifier.</p></article>
-        <article class="evidence-card reveal"><small>Known limitation</small><strong>135.2%</strong><p>Approximate relative effort error; predictions are planning support, not exact forecasts.</p></article>
+      <div class="content-wide result-component-grid">
+        <article class="result-component result-team reveal">
+          <div class="result-component-head"><span class="result-component-index">01 / OPTIMISATION</span><span class="result-evidence-type">Exact + case study</span></div>
+          <h3>Intelligent Team Formation</h3>
+          <p class="result-component-subtitle">Heuristic-seeded NSGA-II explores feasible team and project allocations.</p>
+          <div class="result-feature"><strong>0.9479</strong><span>mean hypervolume, versus 0.6532 for unseeded NSGA-II (about 45.1% higher)</span></div>
+          <dl class="result-facts"><div><dt>Exact verification</dt><dd>34,650 feasible allocations enumerated for 12 students</dd></div><div><dt>Real-response case</dt><dd>60 students; 100% modelled technical coverage and 95% preference satisfaction</dd></div></dl>
+          <details class="result-more"><summary>More evaluation details</summary><ul><li>Medium- and high-conflict Pareto fronts were recovered in the exact verification.</li><li>Friedman chi-square(3) = 326.08, p &lt; 0.001; Kendall W = 0.906.</li><li>The synthetic 1,000-student / 250-project pipeline ran in about 30.15 seconds.</li></ul></details>
+          <p class="result-caveat"><strong>Boundary:</strong> Competencies were self-reported; one cohort case does not establish institution-wide outcomes.</p>
+        </article>
+
+        <article class="result-component result-scheduling reveal">
+          <div class="result-component-head"><span class="result-component-index">02 / PLANNING</span><span class="result-evidence-type">Historical + fixtures</span></div>
+          <h3>Adaptive Scheduling</h3>
+          <p class="result-component-subtitle">Proposal tasks, effort estimates and member assignments become reviewable plans.</p>
+          <div class="result-feature"><strong>73 / 75</strong><span>explicit tasks recovered from three controlled synthetic proposals (97.3%)</span></div>
+          <dl class="result-facts"><div><dt>JIRA proxy classifier</dt><dd>81.27% held-out accuracy; weighted F1 0.815 on 1,411 issues</dd></div><div><dt>Workload balance</dt><dd>LPT CV 3.72% versus guarded hybrid 4.40% across 100 offline trials</dd></div></dl>
+          <details class="result-more"><summary>More evaluation details</summary><ul><li>Effort-model log MAE = 0.8554 and log RMSE = 1.0614; error in original hours remains large.</li><li>The draft reports 6/6 focused scheduling runtime checks passed in an isolated PostgreSQL database.</li><li>Live assignment uses LPT; the hybrid comparison and JIRA classifier are offline research evidence.</li></ul></details>
+          <p class="result-caveat"><strong>Boundary:</strong> JIRA outcome labels are not student-assignment accuracy; fixture recovery is not general proposal accuracy.</p>
+        </article>
+
+        <article class="result-component result-quality reveal">
+          <div class="result-component-head"><span class="result-component-index">03 / ASSESSMENT</span><span class="result-evidence-type">Dataset pipeline</span></div>
+          <h3>Proposal Quality &amp; Mentorship</h3>
+          <p class="result-component-subtitle">Annotated weaknesses and historical feedback support supervisor-led review.</p>
+          <div class="result-feature"><strong>2,151</strong><span>feedback records embedded for retrieval; this is a data-pipeline count, not model accuracy</span></div>
+          <dl class="result-facts"><div><dt>Prepared annotations</dt><dd>2,121 deduplicated spans from 2,227 raw annotations</dd></div><div><dt>Grading evidence</dt><dd>165 records on a 0-42 scale; final selected-model performance unverified</dd></div></dl>
+          <details class="result-more"><summary>More evaluation details</summary><ul><li>2,226 raw historical-feedback records were prepared before 2,151 were embedded.</li><li>Selected MiniLM/Logistic Regression and Ridge figures in the draft are performance targets only.</li><li>The reported backend test suite stopped during collection because a required dependency was missing.</li></ul></details>
+          <p class="result-caveat"><strong>Boundary:</strong> The draft's 85% classification target and grading targets are not achieved results.</p>
+        </article>
+
+        <article class="result-component result-risk reveal">
+          <div class="result-component-head"><span class="result-component-index">04 / MONITORING</span><span class="result-evidence-type">Synthetic + prototype</span></div>
+          <h3>Risk &amp; Contribution Analytics</h3>
+          <p class="result-component-subtitle">Repository and issue-tracker activity inform contribution and early-warning views.</p>
+          <div class="result-feature"><strong>97.63%</strong><span>Logistic Regression held-out accuracy on prepared synthetic risk labels</span></div>
+          <dl class="result-facts"><div><dt>Experiment</dt><dd>4,000 synthetic records; 3,200 train / 800 test; 12 features</dd></div><div><dt>Prototype</dt><dd>GitHub/Jira retrieval, dashboard analytics and HIGH RISK email delivery demonstrated</dd></div></dl>
+          <details class="result-more"><summary>More evaluation details</summary><ul><li>Logistic Regression weighted F1 was approximately 0.98 on the synthetic test set.</li><li>Comparator accuracy: Gradient Boosting 94.00%, Random Forest 92.38%, Decision Tree 90.25%.</li><li>External-API and alert demonstrations establish operation, not independently labelled real-project prediction.</li></ul></details>
+          <p class="result-caveat"><strong>Boundary:</strong> High accuracy on synthetic labels is not measured accuracy for real student-project risk.</p>
+        </article>
+      </div>
+
+      <div class="content-wide result-integrity reveal">
+        <div><span class="result-integrity-label">Integration status</span><p>Team Formation's active-allocation API was consumed and displayed in Scheduling. Automatic backend group-ID mapping and direct Quality/Risk data exchange across all four services have not been verified.</p></div>
+        <div><span class="result-integrity-label">Source &amp; interpretation</span><p>Figures follow the R26-IT-095 draft report, Section 6.3. They come from different datasets and evaluation methods; no single aggregate IPMS accuracy or full-system usability result is claimed.</p></div>
       </div>
     </section>
 
@@ -308,64 +340,64 @@
         </div>
 
         <div class="guidance-grid reveal">
-          <article class="guide-card"><div class="avatar avatar-supervisor">SR</div><div><small>Supervisor</small><h3>Prof. Samantha Rajapaksha</h3><p>Academic supervision and research guidance</p></div></article>
+          <article class="guide-card"><div class="avatar avatar-supervisor"><img src="scan_image_1505800097-Mr__Samantha.jpg.jpeg" alt="Portrait of Prof. Samantha Rajapaksha" loading="lazy" decoding="async"></div><div><small>Supervisor</small><h3>Prof. Samantha Rajapaksha</h3><p>Academic supervision and research guidance</p></div></article>
           <article class="guide-card"><div class="avatar avatar-cosupervisor">KK</div><div><small>Co-Supervisor</small><h3>Mrs. Kaushika Kahatapitiya</h3><p>Academic supervision and research guidance</p></div></article>
         </div>
 
         <div class="member-grid">
           <article class="member-card">
-            <div class="member-photo"><img src="assets/team/dulakshana-malith.jpeg" alt="Portrait of Dulakshana Malith" loading="lazy" decoding="async"></div>
+            <div class="member-photo"><img src="assets/team/dulakshana-malith.jpeg" alt="Portrait of Bandara N D M" loading="lazy" decoding="async"></div>
             <div class="member-content">
               <div class="member-meta"><span class="member-role">Group leader</span><span class="member-id">IT22114662</span></div>
-              <h3>Dulakshana Malith</h3>
+              <h3>Bandara N D M</h3>
               <p class="member-component">Intelligent Team Formation and Topic Feasibility Analysis</p>
               <p class="member-summary">Developed and integrated the multi-objective team and project allocation framework, including feasible team formation, project matching, supervisor allocation, and confirmed team data for downstream IPMS components.</p>
-              <div class="member-links" aria-label="Dulakshana Malith contact links">
-                <a href="https://www.linkedin.com/in/dulakshana-malith-0b66b42b5/" target="_blank" rel="noopener noreferrer" aria-label="Dulakshana Malith on LinkedIn">LinkedIn</a>
-                <a href="https://github.com/DulakshanaMalith" target="_blank" rel="noopener noreferrer" aria-label="Dulakshana Malith on GitHub">GitHub</a>
-                <a href="mailto:ndmalith@gmail.com" aria-label="Email Dulakshana Malith">Email</a>
+              <div class="member-links" aria-label="Bandara N D M contact links">
+                <a href="https://www.linkedin.com/in/dulakshana-malith-0b66b42b5/" target="_blank" rel="noopener noreferrer" aria-label="Bandara N D M on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/DulakshanaMalith" target="_blank" rel="noopener noreferrer" aria-label="Bandara N D M on GitHub">GitHub</a>
+                <a href="mailto:ndmalith@gmail.com" aria-label="Email Bandara N D M">Email</a>
               </div>
             </div>
           </article>
           <article class="member-card">
-            <div class="member-photo"><img src="assets/team/moditha-dilshan.jpg" alt="Portrait of Moditha Dilshan" loading="lazy" decoding="async"></div>
+            <div class="member-photo"><img src="lekamge.png" alt="Portrait of Lekamge R L M D" loading="lazy" decoding="async"></div>
             <div class="member-content">
               <div class="member-meta"><span class="member-role">Team member</span><span class="member-id">IT22117014</span></div>
-              <h3>Moditha Dilshan</h3>
+              <h3>Lekamge R L M D</h3>
               <p class="member-component">Adaptive Scheduling and Generative Project Planning</p>
               <p class="member-summary">Contributed to proposal-driven task planning, dependency-aware schedules, workload balancing, reviewed document and GitHub progress evidence, and academic presentation scheduling.</p>
-              <div class="member-links" aria-label="Moditha Dilshan contact links">
-                <a href="https://www.linkedin.com/in/moditha-dilshan-2168082ab" target="_blank" rel="noopener noreferrer" aria-label="Moditha Dilshan on LinkedIn">LinkedIn</a>
-                <a href="https://github.com/ModithaDilshan" target="_blank" rel="noopener noreferrer" aria-label="Moditha Dilshan on GitHub">GitHub</a>
-                <a href="mailto:modithad8@gmail.com" aria-label="Email Moditha Dilshan">Email</a>
+              <div class="member-links" aria-label="Lekamge R L M D contact links">
+                <a href="https://www.linkedin.com/in/moditha-dilshan-2168082ab" target="_blank" rel="noopener noreferrer" aria-label="Lekamge R L M D on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/ModithaDilshan" target="_blank" rel="noopener noreferrer" aria-label="Lekamge R L M D on GitHub">GitHub</a>
+                <a href="mailto:modithad8@gmail.com" aria-label="Email Lekamge R L M D">Email</a>
               </div>
             </div>
           </article>
           <article class="member-card">
-            <div class="member-photo"><img src="assets/team/imansi-kavindi-kulathunga.jpeg" alt="Portrait of S. A. Imansi Kavindi Kulathunga" loading="lazy" decoding="async"></div>
+            <div class="member-photo"><img src="assets/team/imansi-kavindi-kulathunga.jpeg" alt="Portrait of Kulathunga S A I K" loading="lazy" decoding="async"></div>
             <div class="member-content">
               <div class="member-meta"><span class="member-role">Team member</span><span class="member-id">IT22109576</span></div>
-              <h3>S. A. Imansi Kavindi Kulathunga</h3>
+              <h3>Kulathunga S A I K</h3>
               <p class="member-component">Predictive Risk Monitoring and Contribution Analytics</p>
               <p class="member-summary">Developed monitoring that analyses GitHub and Jira activity, calculates individual contributions with a weighted Contribution Index, and predicts project risk levels using machine learning.</p>
-              <div class="member-links" aria-label="Imansi Kavindi Kulathunga contact links">
-                <a href="https://www.linkedin.com/in/imansikulathunge" target="_blank" rel="noopener noreferrer" aria-label="Imansi Kavindi Kulathunga on LinkedIn">LinkedIn</a>
-                <a href="https://github.com/ImansiKavindi" target="_blank" rel="noopener noreferrer" aria-label="Imansi Kavindi Kulathunga on GitHub">GitHub</a>
-                <a href="mailto:kavindikulathunga203@gmail.com" aria-label="Email Imansi Kavindi Kulathunga">Email</a>
+              <div class="member-links" aria-label="Kulathunga S A I K contact links">
+                <a href="https://www.linkedin.com/in/imansikulathunge" target="_blank" rel="noopener noreferrer" aria-label="Kulathunga S A I K on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/ImansiKavindi" target="_blank" rel="noopener noreferrer" aria-label="Kulathunga S A I K on GitHub">GitHub</a>
+                <a href="mailto:kavindikulathunga203@gmail.com" aria-label="Email Kulathunga S A I K">Email</a>
               </div>
             </div>
           </article>
           <article class="member-card">
-            <div class="member-photo"><img src="assets/team/daham-rashmika.jpeg" alt="Portrait of Daham Rashmika" loading="lazy" decoding="async"></div>
+            <div class="member-photo"><img src="rashmika.jpeg" alt="Portrait of Rashmika R M D" loading="lazy" decoding="async"></div>
             <div class="member-content">
               <div class="member-meta"><span class="member-role">Team member</span><span class="member-id">IT22101624</span></div>
-              <h3>Daham Rashmika</h3>
+              <h3>Rashmika R M D</h3>
               <p class="member-component">Automated Quality Assessment and Adaptive Mentorship</p>
               <p class="member-summary">Supports proposal review through document-structure checks, machine-learning weakness classification, historical feedback retrieval, learning-resource recommendations, and version-aware supervisor review.</p>
-              <div class="member-links" aria-label="Daham Rashmika contact links">
-                <a href="https://www.linkedin.com/in/daham-rashmika-21949b332" target="_blank" rel="noopener noreferrer" aria-label="Daham Rashmika on LinkedIn">LinkedIn</a>
-                <a href="https://github.com/Rashmika436" target="_blank" rel="noopener noreferrer" aria-label="Daham Rashmika on GitHub">GitHub</a>
-                <a href="mailto:dahamrashmika436@gmail.com" aria-label="Email Daham Rashmika">Email</a>
+              <div class="member-links" aria-label="Rashmika R M D contact links">
+                <a href="https://www.linkedin.com/in/daham-rashmika-21949b332" target="_blank" rel="noopener noreferrer" aria-label="Rashmika R M D on LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Rashmika436" target="_blank" rel="noopener noreferrer" aria-label="Rashmika R M D on GitHub">GitHub</a>
+                <a href="mailto:dahamrashmika436@gmail.com" aria-label="Email Rashmika R M D">Email</a>
               </div>
             </div>
           </article>
@@ -402,13 +434,13 @@
             <div class="doc-icon doc-blue" aria-hidden="true">04</div><div><small>Checklist</small><h3>Checklist 1</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
           </a>
           <a class="document-card" href="https://drive.google.com/drive/folders/1FRohfYrXlK2mUjtxNG1ugj58RMnzrIPK?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Progress Presentation 1 on Google Drive">
-            <div class="doc-icon doc-orange" aria-hidden="true">05</div><div><small>Presentation</small><h3>Progress Presentation – 1</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
+            <div class="doc-icon doc-orange" aria-hidden="true">05</div><div><small>Presentation</small><h3>Progress Presentation 1</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
           </a>
           <a class="document-card" href="https://drive.google.com/drive/folders/1GPkdLu9ZgBveZlXOpJ8m_jnp1OXiKvWF?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Research Paper on Google Drive">
             <div class="doc-icon doc-pink" aria-hidden="true">06</div><div><small>Publication</small><h3>Research Paper</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
           </a>
           <a class="document-card" href="https://drive.google.com/drive/folders/173Jq9oQ3cYV8dhm6U6dXb9RRnFexOyly?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Progress Presentation 2 on Google Drive">
-            <div class="doc-icon doc-orange" aria-hidden="true">07</div><div><small>Presentation</small><h3>Progress Presentation – 2</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
+            <div class="doc-icon doc-orange" aria-hidden="true">07</div><div><small>Presentation</small><h3>Progress Presentation 2</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>
           </a>
           <a class="document-card" href="https://drive.google.com/drive/folders/1InuHRiXG10ZJZ_hMBvZCc0QzfPmRuV6Q?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="View Final Report and Presentation on Google Drive">
             <div class="doc-icon doc-pink" aria-hidden="true">08</div><div><small>Final submission</small><h3>Final Report &amp; Presentation</h3><p>Open shared Drive folder</p></div><span aria-hidden="true">↗</span>

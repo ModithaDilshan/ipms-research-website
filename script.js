@@ -95,7 +95,7 @@
       const progress = duration === 0 ? 1 : Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
       const value = target * eased;
-      element.textContent = `${value.toFixed(decimals)}${suffix}`;
+      element.textContent = `${new Intl.NumberFormat("en-US", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }).format(value)}${suffix}`;
       if (progress < 1) requestAnimationFrame(tick);
     }
 
