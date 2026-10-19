@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261019-documents">
+  <link rel="stylesheet" href="styles.css?v=20261019-results-cleanup">
   <script src="script.js?v=20261018-four-component-results" defer></script>
 </head>
 <body>
@@ -275,7 +275,6 @@
           <div class="result-feature"><strong>0.9479</strong><span>mean hypervolume, versus 0.6532 for unseeded NSGA-II (about 45.1% higher)</span></div>
           <dl class="result-facts"><div><dt>Exact verification</dt><dd>34,650 feasible allocations enumerated for 12 students</dd></div><div><dt>Real-response case</dt><dd>60 students; 100% modelled technical coverage and 95% preference satisfaction</dd></div></dl>
           <details class="result-more"><summary>More evaluation details</summary><ul><li>Medium- and high-conflict Pareto fronts were recovered in the exact verification.</li><li>Friedman chi-square(3) = 326.08, p &lt; 0.001; Kendall W = 0.906.</li><li>The synthetic 1,000-student / 250-project pipeline ran in about 30.15 seconds.</li></ul></details>
-          <p class="result-caveat"><strong>Boundary:</strong> Competencies were self-reported; one cohort case does not establish institution-wide outcomes.</p>
         </article>
 
         <article class="result-component result-scheduling reveal">
@@ -285,7 +284,6 @@
           <div class="result-feature"><strong>73 / 75</strong><span>explicit tasks recovered from three controlled test PDFs (97.3%)</span></div>
           <dl class="result-facts"><div><dt>JIRA proxy classifier</dt><dd>81.27% held-out accuracy; weighted F1 0.815 on 1,411 issues</dd></div><div><dt>Workload balance</dt><dd>LPT CV 3.72% versus guarded hybrid 4.40% across 100 offline trials</dd></div></dl>
           <details class="result-more"><summary>More evaluation details</summary><ul><li>A separate prototype run parsed the team's project proposal into a 25-task plan; it is not part of the 73/75 test-PDF result.</li><li>Effort-model log MAE = 0.8554 and log RMSE = 1.0614; error in original hours remains large.</li><li>The draft reports 6/6 focused scheduling runtime checks passed in an isolated PostgreSQL database.</li><li>Live assignment uses LPT; the hybrid comparison and JIRA classifier are offline research evidence.</li></ul></details>
-          <p class="result-caveat"><strong>Boundary:</strong> JIRA outcome labels are not student-assignment accuracy; recovery on test PDFs is not general proposal accuracy.</p>
         </article>
 
         <article class="result-component result-quality reveal">
@@ -295,7 +293,6 @@
           <div class="result-feature"><strong>2,151</strong><span>feedback records embedded for retrieval; this is a data-pipeline count, not model accuracy</span></div>
           <dl class="result-facts"><div><dt>Prepared annotations</dt><dd>2,121 deduplicated spans from 2,227 raw annotations</dd></div><div><dt>Grading evidence</dt><dd>165 records on a 0-42 scale; final selected-model performance unverified</dd></div></dl>
           <details class="result-more"><summary>More evaluation details</summary><ul><li>2,226 raw historical-feedback records were prepared before 2,151 were embedded.</li><li>Selected Sentence-BERT/Logistic Regression and Ridge Regression figures in the draft are performance targets only.</li><li>The reported backend test suite stopped during collection because a required dependency was missing.</li></ul></details>
-          <p class="result-caveat"><strong>Boundary:</strong> The draft's 85% classification target and grading targets are not achieved results.</p>
         </article>
 
         <article class="result-component result-risk reveal">
@@ -305,7 +302,6 @@
           <div class="result-feature"><strong>97.63%</strong><span>Logistic Regression held-out accuracy on prepared synthetic risk labels</span></div>
           <dl class="result-facts"><div><dt>Experiment</dt><dd>4,000 synthetic records; 3,200 train / 800 test; 12 features</dd></div><div><dt>Prototype</dt><dd>GitHub/Jira retrieval, dashboard analytics and HIGH RISK email delivery demonstrated</dd></div></dl>
           <details class="result-more"><summary>More evaluation details</summary><ul><li>Logistic Regression weighted F1 was approximately 0.98 on the synthetic test set.</li><li>Comparator accuracy: Gradient Boosting 94.00%, Random Forest 92.38%, Decision Tree 90.25%.</li><li>External-API and alert demonstrations establish operation, not independently labelled real-project prediction.</li></ul></details>
-          <p class="result-caveat"><strong>Boundary:</strong> High accuracy on synthetic labels is not measured accuracy for real student-project risk.</p>
         </article>
       </div>
 
@@ -340,7 +336,7 @@
         </div>
 
         <div class="guidance-grid reveal">
-          <article class="guide-card"><div class="avatar avatar-supervisor"><img src="scan_image_1505800097-Mr__Samantha.jpg.jpeg" alt="Portrait of Prof. Samantha Rajapaksha" loading="lazy" decoding="async"></div><div><small>Supervisor</small><h3>Prof. Samantha Rajapaksha</h3><p>Academic supervision and research guidance</p></div></article>
+          <article class="guide-card"><div class="avatar avatar-supervisor"><img src="scan_image_1505800097-Mr__Samantha.jpg.jpeg" alt="Portrait of Prof. Samantha Rajapaksha" loading="lazy" decoding="async"></div><div><small>Supervisor</small><h3>Prof. Samantha Rajapaksha</h3><p>Head | Department of Information Technology | Faculty of Computing</p></div></article>
           <article class="guide-card"><div class="avatar avatar-cosupervisor"><img src="assets/team/lashika-chamini.png" alt="Portrait of Ms. Lashika Chamini" loading="lazy" decoding="async"></div><div><small>Co-Supervisor</small><h3>Ms. Lashika Chamini</h3><p>Assistant Lecturer · Department of Information Technology · Faculty of Computing</p></div></article>
         </div>
 
