@@ -23,11 +23,14 @@ The Results section summarises all four components using Section 6.3 of `R26-IT-
 - `script.js` — navigation, theme, reveals, counters, and active-section state
 - `assets/` — favicon and the remaining team portraits in `assets/team/`
 - `lekamge.png`, `rashmika.jpeg`, `scan_image_1505800097-Mr__Samantha.jpg.jpeg` — replacement portraits used by the team and supervisor cards; include these files when publishing the site
-- `documents/` — optional supporting files; the nine document cards on the page link to shared Google Drive folders
+- `R26-IT-095/` — the 17 downloadable project files across nine milestone categories. Research papers and final-stage files each have individual download links.
+- `documents/` — optional supporting local material
+
+The Checklist 1 download is an early project README, not an approved account/configuration guide. Its older architecture and sample-login statements should not be treated as current implementation evidence. Files named `*_DRAFT.pdf` are displayed as drafts.
 
 ## Before public deployment
 
 1. Confirm the official spelling and preferred display format of all names.
 2. Confirm that each member approves public use of their supplied photograph, email address, and profile links.
-3. Replace or remove any draft document before publishing.
+3. Confirm whether the supplied draft reports should remain publicly downloadable; replace them when approved final versions are available.
 4. Add an official group contact address only after the team approves it.
